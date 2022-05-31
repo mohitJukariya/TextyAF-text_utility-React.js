@@ -45,7 +45,7 @@ function App() {
       <Alert alert = {alert}/>
       <div className="container my-3">
         <Routes>
-            <Route exact path="/about" element = {<About />} />
+            <Route exact path="/about" element = {<About mode={mode}/>} />
             <Route exact path="/TextyAF-text_utility-React.js" element = { <Textform heading="Enter the text below" showAlert={showAlert} mode= {mode}/>} />
         </Routes>
       </div>
