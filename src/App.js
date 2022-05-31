@@ -44,10 +44,9 @@ function App() {
       <Navbar title="TextyAF" aboutText="About" mode={mode} toggleMode={toggleMode}/>
       <Alert alert = {alert}/>
       <div className="container my-3">
-      <Textform heading="Enter the text below" showAlert={showAlert} mode= {mode}/>
         <Routes>
-              <Route exact path="/about" element = {<About />} />
-              <Route exact path="/" element = { <Textform heading="Enter the text below" showAlert={showAlert} mode= {mode}/>} />
+            <Route exact path="/about" element = {<About />} />
+            <Route exact path="/TextyAF-text_utility-React.js" element = { <Textform heading="Enter the text below" showAlert={showAlert} mode= {mode}/>} />
         </Routes>
       </div>
     </Router>
